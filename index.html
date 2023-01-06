@@ -30,9 +30,11 @@
         <img src="./images/pattern-circles.svg" alt="patter circle" />
       </figure>
 
-      <div class="card bg-white py-5 px-5 h-96 mt-20 rounded">
+      <div class="card bg-white px-8 py-8 h-96 mt-20 rounded">
         <section class="flex items-center justify-between">
-          <p class="uppercase text-xs tracking-widest">100k Pageviews</p>
+          <p class="uppercase text-xs tracking-widest text-grayishBlueTxt">
+            100k Pageviews
+          </p>
 
           <div class="month flex items-center">
             <p class="text-3xl font-extrabold text-darkDesaturatedBlue">
@@ -42,10 +44,12 @@
           </div>
         </section>
 
-        <section class="slider bg-lightGrayishBlueSlider"></section>
+        <section class="slider">
+          <input type="range" class="w-full p-1.5" />
+        </section>
 
         <div class="billing flex items-center justify-evenly pb-8">
-          <p class="text-sm">Monthly Billing</p>
+          <p class="text-xs text-grayishBlueTxt">Monthly Billing</p>
 
           <div
             class="toggleCT bg-lightGrayishBlueToggle rounded-lg w-10 h-5 ml-2 mr-2 relative cursor-pointer"
@@ -56,7 +60,7 @@
           </div>
 
           <aside class="flex items-center">
-            <p class="px-1 text-sm">Yearly Billing</p>
+            <p class="px-1 text-xs text-grayishBlueTxt">Yearly Billing</p>
             <p
               class="discount px-1 bg-lightGrayishRed rounded text-xs text-lightRed"
             >
@@ -65,32 +69,35 @@
           </aside>
         </div>
 
-        <section class="features mt-20 flex items-center justify-between">
+        <!-- border -->
+        <div class="borderCT opacity-50"></div>
+
+        <section class="features mt-10 flex items-center justify-between">
           <ul>
             <li class="flex items-center justify-start pb-1 text-sm">
               <figure class="pr-3">
                 <img src="./images/icon-check.svg" alt="icon check" />
               </figure>
-              <p>Unlimited websites</p>
+              <p class="text-grayishBlueTxt">Unlimited websites</p>
             </li>
 
             <li class="flex items-center justify-start pb-1 text-sm">
               <figure class="pr-3">
                 <img src="./images/icon-check.svg" alt="icon check" />
               </figure>
-              <p>100% data ownership</p>
+              <p class="text-grayishBlueTxt">100% data ownership</p>
             </li>
 
             <li class="flex items-center justify-start pb-1 text-sm">
               <figure class="pr-3">
                 <img src="./images/icon-check.svg" alt="icon check" />
               </figure>
-              <p>Email reports</p>
+              <p class="text-grayishBlueTxt">Email reports</p>
             </li>
           </ul>
 
           <button
-            class="bg-darkDesaturatedBlue text-lightGrayishBlueToggle text-xs rounded-xl"
+            class="bg-darkDesaturatedBlue text-lightGrayishBlueToggle text-xs rounded-3xl"
           >
             Start my trial
           </button>

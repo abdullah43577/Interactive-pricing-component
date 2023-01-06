@@ -21,7 +21,6 @@ body {
 
 .slider {
   width: 100%;
-  height: 5px;
   margin: 40px 0;
 }
 
@@ -30,13 +29,17 @@ body {
 }
 
 .billing {
-  border-bottom: 1px solid hsl(223, 50%, 87%);
   max-width: 350px;
-  margin-inline: auto;
+  margin-left: 70px;
+}
+
+.borderCT {
+  border-bottom: 1px solid hsl(223, 50%, 87%);
+  width: 100%;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 button:hover {
