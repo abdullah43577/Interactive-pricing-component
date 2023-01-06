@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body
+    class="flex flex-col justify-center items-center relative ... h-screen bg-veryPaleBlue"
+  >
+    <main>
+      <h3 class="text-3xl font-bold text-center text-darkDesaturatedBlue">
+        Simple, traffic-based pricing
+      </h3>
+      <p class="text-center text-grayishBlueTxt">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+
+      <div class="card bg-white py-5 px-5 h-96 mt-20 rounded">
+        <section class="flex items-center justify-between">
+          <p class="uppercase text-xs tracking-widest">100k Pageviews</p>
+
+          <div class="month flex items-center">
+            <p class="text-3xl font-extrabold text-darkDesaturatedBlue">
+              $16.00
+            </p>
+            <p class="text-xs pl-1">/ month</p>
+          </div>
+        </section>
+
+        <section class="slider bg-lightGrayishBlueSlider"></section>
+
+        <div class="billing flex items-center justify-evenly pb-8">
+          <p class="text-sm">Monthly Billing</p>
+
+          <div
+            class="toggleCT bg-lightGrayishBlueToggle rounded-lg w-10 h-5 ml-2 mr-2 relative cursor-pointer"
+          >
+            <div
+              class="toggle rounded-full px-1.5 py-1.5 bg-white absolute left-1 bottom-1 cursor-pointer"
+            ></div>
+          </div>
+
+          <aside class="flex items-center">
+            <p class="px-1 text-sm">Yearly Billing</p>
+            <p
+              class="discount px-1 bg-lightGrayishRed rounded text-xs text-lightRed"
+            >
+              25% discount
+            </p>
+          </aside>
+        </div>
+
+        <section class="features mt-20 flex items-center justify-between">
+          <ul>
+            <li class="flex items-center justify-start pb-1">
+              <figure class="pr-1">
+                <img src="./images/icon-check.svg" alt="icon check" />
+              </figure>
+              <p>Unlimited websites</p>
+            </li>
+
+            <li class="flex items-center justify-start pb-1">
+              <figure class="pr-1">
+                <img src="./images/icon-check.svg" alt="icon check" />
+              </figure>
+              <p>100% data ownership</p>
+            </li>
+
+            <li class="flex items-center justify-start pb-1">
+              <figure class="pr-1">
+                <img src="./images/icon-check.svg" alt="icon check" />
+              </figure>
+              <p>Email reports</p>
+            </li>
+          </ul>
+
+          <button
+            class="bg-darkDesaturatedBlue text-lightGrayishBlueToggle text-xs rounded-xl"
+          >
+            Start my trial
+          </button>
+        </section>
+      </div>
+    </main>
+    <footer class="absolute bottom-5 left-10 ...">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" target="_blank">Abdullah Ayoola</a>.
+      </div>
+    </footer>
+  </body>
+</html>
