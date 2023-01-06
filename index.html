@@ -17,12 +17,18 @@
     class="flex flex-col justify-center items-center relative h-screen bg-veryPaleBlue"
   >
     <main>
-      <h3 class="text-3xl font-bold text-center text-darkDesaturatedBlue">
+      <h3
+        class="text-3xl font-bold text-center text-darkDesaturatedBlue z-10 relative"
+      >
         Simple, traffic-based pricing
       </h3>
-      <p class="text-center text-grayishBlueTxt">
+      <p class="text-center text-grayishBlueTxt z-10 relative">
         Sign-up for our 30-day trial. No credit card required.
       </p>
+
+      <figure class="absolute top-4 ml-40">
+        <img src="./images/pattern-circles.svg" alt="patter circle" />
+      </figure>
 
       <div class="card bg-white py-5 px-5 h-96 mt-20 rounded">
         <section class="flex items-center justify-between">
@@ -62,21 +68,21 @@
         <section class="features mt-20 flex items-center justify-between">
           <ul>
             <li class="flex items-center justify-start pb-1 text-sm">
-              <figure class="pr-1">
+              <figure class="pr-3">
                 <img src="./images/icon-check.svg" alt="icon check" />
               </figure>
               <p>Unlimited websites</p>
             </li>
 
             <li class="flex items-center justify-start pb-1 text-sm">
-              <figure class="pr-1">
+              <figure class="pr-3">
                 <img src="./images/icon-check.svg" alt="icon check" />
               </figure>
               <p>100% data ownership</p>
             </li>
 
             <li class="flex items-center justify-start pb-1 text-sm">
-              <figure class="pr-1">
+              <figure class="pr-3">
                 <img src="./images/icon-check.svg" alt="icon check" />
               </figure>
               <p>Email reports</p>
@@ -99,5 +105,6 @@
         >. Coded by <a href="#" target="_blank">Abdullah Ayoola</a>.
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
