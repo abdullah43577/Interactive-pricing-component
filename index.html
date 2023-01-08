@@ -30,26 +30,35 @@
         <img src="./images/pattern-circles.svg" alt="patter circle" />
       </figure>
 
-      <div class="card bg-white px-8 py-8 h-96 mt-20 rounded">
+      <div class="card bg-white px-8 py-8 h-96 mt-20 rounded relative">
         <section class="flex items-center justify-between">
           <p class="uppercase text-xs tracking-widest text-grayishBlueTxt">
             100k Pageviews
           </p>
 
           <div class="month flex items-center">
-            <p class="text-3xl font-extrabold text-darkDesaturatedBlue">
-              $16.00
+            <p class="price text-3xl font-extrabold text-darkDesaturatedBlue">
+              $100.00
             </p>
             <p class="text-xs pl-1">/ month</p>
           </div>
         </section>
 
-        <section class="slider">
-          <input type="range" class="w-full p-1.5" />
+        <section class="slider w-full mt-[40px] mb-[40px] ml-[0] mr-[0]">
+          <input
+            type="range"
+            min="0"
+            max="200"
+            value="100"
+            steps="1"
+            class="w-full p-1.5"
+          />
         </section>
 
-        <div class="billing flex items-center justify-evenly pb-8">
-          <p class="text-xs text-grayishBlueTxt">Monthly Billing</p>
+        <div
+          class="billing flex items-center justify-evenly pb-8 max-w-[350px] ml-[70px]"
+        >
+          <p class="billTxT text-xs text-grayishBlueTxt">Monthly Billing</p>
 
           <div
             class="toggleCT bg-lightGrayishBlueToggle rounded-lg w-10 h-5 ml-2 mr-2 relative cursor-pointer"
@@ -60,11 +69,18 @@
           </div>
 
           <aside class="flex items-center">
-            <p class="px-1 text-xs text-grayishBlueTxt">Yearly Billing</p>
+            <p class="billTxT px-1 text-xs text-grayishBlueTxt">
+              Yearly Billing
+            </p>
             <p
-              class="discount px-1 bg-lightGrayishRed rounded text-xs text-lightRed"
+              class="percent discount bg-lightGrayishRed rounded text-xs text-lightRed p-[3px]"
             >
               25% discount
+            </p>
+            <p
+              class="hide discount bg-lightGrayishRed rounded text-xs text-lightRed p-[3px]"
+            >
+              25%
             </p>
           </aside>
         </div>
@@ -97,15 +113,16 @@
           </ul>
 
           <button
-            class="bg-darkDesaturatedBlue text-lightGrayishBlueToggle text-xs rounded-3xl"
+            class="bg-darkDesaturatedBlue text-lightGrayishBlueToggle text-xs rounded-3xl pt-[10px] pb-[10px] pl-[30px] pr-[30px] hover:text-white"
           >
             Start my trial
           </button>
         </section>
       </div>
     </main>
+
     <footer class="absolute bottom-5 left-5">
-      <div class="attribution">
+      <div class="attribution text-sm">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a

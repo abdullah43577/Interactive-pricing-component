@@ -7,3 +7,12 @@ const toggleContainer = document.querySelector(".toggleCT");
   toggle.classList.toggle("active");
   toggleContainer.classList.toggle("act");
 });
+
+// slider pricing toggle
+const inputSlider = document.querySelector("input");
+const price = document.querySelector(".price");
+
+inputSlider.addEventListener("input", () => {
+  let result = inputSlider.value;
+  price.textContent = `$${result}.00`;
+});

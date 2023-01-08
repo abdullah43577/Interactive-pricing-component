@@ -14,36 +14,18 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+a {
+  color: #ff0000;
+}
+
 .card {
-  box-shadow: 3px 5px 3px 5px rgb(151, 147, 147);
+  box-shadow: 3px 5px 3px 5px #979393;
   width: 500px;
-}
-
-.slider {
-  width: 100%;
-  margin: 40px 0;
-}
-
-.discount {
-  padding: 3px;
-}
-
-.billing {
-  max-width: 350px;
-  margin-left: 70px;
 }
 
 .borderCT {
   border-bottom: 1px solid hsl(223, 50%, 87%);
   width: 100%;
-}
-
-button {
-  padding: 10px 30px;
-}
-
-button:hover {
-  color: #fff;
 }
 
 .toggleCT.act,
@@ -57,4 +39,106 @@ button:hover {
 
 .toggle.active {
   transform: translateX(20px);
+}
+
+.hide {
+  display: none;
+}
+
+section.slider > input[type="range"] {
+  appearance: none;
+  height: 0px;
+  width: 100%;
+  border-radius: 50px;
+  background: hsl(174, 77%, 80%);
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  background-color: hsl(174, 86%, 45%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  visibility: visible;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  width: 40px;
+  height: 40px;
+  cursor: grab;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  width: 40px;
+  height: 40px;
+  cursor: grabbing;
+}
+
+@media (max-width: 500px) {
+  body {
+    height: 100%;
+  }
+
+  .card {
+    width: 350px;
+    height: auto;
+    margin-inline: auto;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  button.pl-\[30px\] {
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .billing {
+    width: 100%;
+    margin: 0;
+    margin-top: 100px;
+  }
+
+  .billTxT {
+    font-size: 10px;
+  }
+
+  .percent {
+    display: none;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  .toggleCT {
+    margin: 0;
+  }
+
+  .month {
+    position: absolute;
+    top: 130px;
+    left: 100px;
+  }
+
+  div.card > section {
+    justify-content: center;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 385px) {
+  body {
+    min-height: 140vh;
+  }
+
+  .card {
+    width: 300px;
+  }
 }
