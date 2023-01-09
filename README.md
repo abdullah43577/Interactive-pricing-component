@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/interactive-pricing-component-KMxV4i14oM)
 - Live Site URL: [Live site URL here](https://interactive-pricing-compt.netlify.app/)
 
 ## My process
