@@ -47,7 +47,7 @@ a {
 
 section.slider > input[type="range"] {
   appearance: none;
-  height: 0px;
+  height: 10px;
   width: 100%;
   border-radius: 50px;
   background: hsl(174, 77%, 80%);
@@ -61,6 +61,11 @@ input[type="range"]::-webkit-slider-thumb {
   height: 30px;
   border-radius: 50%;
   visibility: visible;
+  background-image: url("./images/pattern-circles.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
