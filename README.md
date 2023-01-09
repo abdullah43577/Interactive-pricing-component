@@ -27,12 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./design/Screenshot_16.png)
+![](./design/Screenshot_17.png)
 
 ### Links
 
 - Solution URL: [Solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site URL here](https://interactive-pricing-compt.netlify.app/)
 
 ## My process
 
@@ -53,7 +54,6 @@ I learned how to use Tailwind CSS. It's my first time using it. I felt very slow
 ### Continued development
 
 I'll continue working my way up to becoming better using this CSS framework [Tailwind](https://tailwindcss.com/). It's a very useful library I hope I can flow with it pretty soon.
-
 
 ### Useful resources
 
